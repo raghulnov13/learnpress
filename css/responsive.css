@@ -1,0 +1,95 @@
+/* CHECKBOX HACK */
+input[type=checkbox] {
+    display: none;
+}
+
+/*HAMBURGER MENU*/
+.hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+    color: white;
+}
+
+/* APPLYING MEDIA QUERIES */
+@media (max-width: 768px) {
+    .menu ul {
+        display: none;
+        position: absolute;
+        background-color: black;
+        right: 0;
+        left: 0;
+        text-align: center;
+        padding: 16px 0;
+        color: white;
+    }
+
+    .menu li:hover {
+        display: inline-block;
+        /* background-color: #4c9e9e; */
+        transition: 0.3s ease;
+    }
+
+    input[type=checkbox]:checked~.menu ul {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+    }
+
+    .dropdown li:hover {
+        color: orange;
+    }
+}
+
+/* section-2 */
+@media (max-width:768px){
+    .courses{
+        padding: 0;
+       
+    }
+    .section-title{
+        padding: 0px 20px;
+    }
+    .section-flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    .section-card{
+        width: 100%;
+    
+    }
+    #section-hide {
+        display: none;
+    }
+    #section-hide1{
+        display: none;
+    }
+}
+@media (min-width:769px) and (max-width:1023px){
+    .courses{
+        padding: 0;
+       
+    }
+    .section-title{
+        padding: 0px 20px;
+    }
+    .section-flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    .section-card{
+        width: 100%;
+    
+    }
+    #section-hide1{
+        display: none;
+    }
+}
